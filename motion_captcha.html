@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<title>MotionCAPTCHA Demo - Joss Crowcroft</title>
+	<meta name="description" content="Demo - MotionCAPTCHA jQuery/javascript HTML5 Canvas plugin, featuring Harmony and the Dollar/Protractor Recognizer">
+	<meta name="keywords" content="motioncaptcha,motion,captcha,jquery,plugin,javascript,html5,canvas,mrdoob,harmony,dollar,recognizer"> 
+	
+	<!-- This one is needed: -->
+	<link rel="stylesheet" href="assets/css/jquery.motionCaptcha.0.2.css">
+	
+	<!-- This one is not: -->
+	<link rel="stylesheet" href="assets/css/motionCaptcha.demo.css">
+	
+	<!-- Scripts are in the footer. -->
+	
+</head>
+
+<body data-twttr-rendered="true">
+	<div id="wrap">
+		<div id="page">
+
+			<h1><a href="http://josscrowcroft.com/projects/motioncaptcha-jquery-plugin/" title="MotionCAPTCHA jQuery plugin">MotionCAPTCHA v0.2</a></h1>
+			<h2>“Stop Spam, Draw Shapes”</h2>
+			
+			
+			<!-- The form that MC will act on: -->
+			<form action="#" method="post" id="mc-form" class="mc-active">
+				<p><input class="placeholder" type="text" placeholder="your name"></p>
+				<p><input class="placeholder" type="email" placeholder="your email address …"></p>
+				<p><textarea class="placeholder" placeholder="your message …" cols="" rows="3"></textarea></p>
+
+				<div id="mc">
+					<p>Please draw the shape in the box to submit the form: (<a onclick="window.location.reload()" href="#" title="Click for a new shape">new shape</a>)</p>
+					<canvas id="mc-canvas" width="220" height="154" class="rectangle">
+						Your browser doesn't support the canvas element - please visit in a modern browser.
+					</canvas>
+					
+				</div>
+
+				<div class="btn-group">
+					<button id="motioncaptcha" class="btn" data-dismiss="modal" aria-hidden="true">Abbrechen</button>
+					<button id="motioncaptcha" class="btn" type="reset">Reset</button>
+					<button id="motioncaptcha" value="Send" name="newsletter" type="submit" class="btn btn-primary">Newsletter bestellen</button>
+				</div>
+				
+				
+				
+
+			</form>
+			<div class="clear"></div>
+
+			
+			
+			
+			<p>
+				
+
+			</p>
+			
+			
+
+
+		</div>
+	</div>
+	
+
+	
+	<!-- ok, here we go: -->
+
+	<!-- Get them jqueries: -->
+	<script src="assets/js/jquery.js" type="text/javascript"></script>
+	
+	<!-- HTML5 Placeholder fallback: -->
+	<script src="assets/js/jquery.placeholder.1.1.1.min.js" type="text/javascript"></script>
+	
+	<!-- MotionCAPTCHA: -->
+	<script src="assets/js/jquery.motionCaptcha.0.2.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			
+			// Do the biznizz:
+			$('#mc-form').motionCaptcha({
+				shapes: ['triangle', 'x', 'rectangle', 'circle', 'check', 'zigzag', 'arrow', 'delete', 'pigtail', 'star']
+			});
+			
+		});
+	</script>
+
+	
+</body>
+</html>

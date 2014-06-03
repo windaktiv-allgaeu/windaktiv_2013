@@ -1,0 +1,17 @@
+# BEGIN Gzip Compression
+AddEncoding gzip .gz
+<filesmatch "\.js\.gz$">
+AddType "text/javascript" .gz
+</filesmatch>
+<filesmatch "\.css\.gz$">
+AddType "text/css" .gz
+</filesmatch>
+<ifmodule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME} \.(js|css)$
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)$ $1.gz [QSA,L]
+</ifmodule>
+# END Gzip Compression

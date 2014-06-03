@@ -1,0 +1,275 @@
+.greentype {
+	color: #92c020;
+}
+
+.weiss {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
+.gruen {
+	background-color: #92c020;
+}
+
+.slogan {
+width: 100%;
+color: #92c020;
+font-size: 65px;
+font-weight: bold;
+font-style: italic;
+background-color: rgba(255, 255, 255, 0);
+line-height: normal;
+position: relative;
+text-align: left;
+margin-top: 20px;
+margin-bottom: 30px;
+height: 100px;
+}
+
+
+@media (max-width: 1024px) {
+.slogan {
+font-size: 40px;
+line-height: 40px;
+text-align: left;
+padding-top: 20px;
+}
+}
+
+.mittig {
+align: center;
+clear: both;
+position: relative;
+text-align: center;
+}
+
+.links {
+align: left;
+clear: left;
+position: relative;
+text-align: left;
+float: left;
+}
+
+
+img.center { display: block;
+margin: 5px auto;
+}
+
+.dunkelgrau {
+background-color: #504e4c;
+color: #504e4c;
+}
+
+.schriftgrau {
+color: #504e4c;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -100px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+height: 140px;
+padding-top: 10px;
+}
+#footer {
+	background-color: #92c020;
+}
+
+a {
+	color: #92c020;
+}
+
+li {
+font-size: 100%;	  	
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+#footer {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+}
+}
+
+
+/* slogan */
+#slogan {
+height: 150px;
+padding-top: 40px;
+}
+#slogan {
+	
+}
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+#slogan {
+margin: 0;
+padding: 0;
+}
+}
+
+.imp-unit {
+  padding: 10px 0 0 10px;
+  margin-bottom: 20px;
+  color: inherit;
+  background-color: white;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  opacity: 1;
+}
+
+.wa-unit {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: inherit;
+  background-color: white;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  opacity: 1;
+}
+/*.wa-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  color: inherit;
+  letter-spacing: -1px;
+}
+.wa-unit li {
+  line-height: 30px;
+}*/
+
+.wa-thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 20px;
+  border: 0px solid #ddd;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #92c020;
+  color: white;
+  margin-bottom: 20px;
+}
+a.wa-thumbnail:hover {
+  border-color: #82b600;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+.wa-thumbnail > img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wa-thumbnail .caption {
+  padding: 7px;
+  color: white;
+}
+
+.dia-unit {
+  padding: 0;
+  margin-bottom: 20px;
+  color: inherit;
+  background-color: white;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  opacity: 1;
+  margin-top: 60px;
+  width: auto;
+  overflow: hidden;
+}
+
+.dia-unit > img {
+	height: 300px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.rund {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+	-webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+	
+}
+
+.pad {
+	padding-top: 42px;
+}
+
+.divider {
+	background-color: #504e4c;
+	height: 20px;
+	color: #504e4c;
+}
+
+.pad20 {
+	padding-bottom: 20px;
+}
+
+.reset {
+	visibility: visible;
+}
+
+#Grundbesitzer {
+	max-height: 1200px;
+	height: 1000px;
+}
+
+.fehlermeldung {
+	height: 60px;
+}
+
+#fenster_zu1 {
+	
+}
+
+.erfolg {
+	color: #92c020;
+	height: auto;
+	text-transform: uppercase;
+	font-size: 250px;
+	line-height: normal;
+}
+
